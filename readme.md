@@ -3,7 +3,7 @@
 - If going back and forth between linux/windows then change the Run Command shortcut to META+R on linux   
 - Longer scripts should be in path on all systems  
 - Insert a long delay after META+R (e.g. 500ms - `e2017d`)  
-- Use alt-tab after copying to clipboard followed by a long delay as the current window lost focus  
+- Use alt-tab after copying to clipboard followed by a long delay as the current window will lose focus  
 - If a level modifier (alt, ctrl, shft, meta) key gets pressed (down) double check that it gets unpressed (up) 
 
 ### Get current epoch time and paste into current window  
