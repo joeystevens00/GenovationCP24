@@ -1,0 +1,34 @@
+%%Level1
+%Name=Comment block
+
+# Win/Meta Down
+e01f
+
+# R
+2d
+
+# Wait 500ms
+e2017d
+
+# Win/Meta Up
+e0f01f
+
+# cc_block
+2121124ef012324b442142
+
+# Enter
+5a
+
+# Alt+Tab 
+110df011
+
+# Wait 500ms
+e2017d
+
+# Ctrl+v
+142af014
+
+# Up Up Up
+e075e075e075
+
+%%Level1End

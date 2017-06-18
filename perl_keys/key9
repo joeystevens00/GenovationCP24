@@ -1,0 +1,15 @@
+%%Level1
+%Name=Comment desc to subroutine
+
+# Drops 4 comment lines followed by a subroutine declaration
+
+# Down (This is always follwed by Key8)
+e072
+
+# Add comment line of just #  x4 and drop to the line below
+1226f0125a1226f0125a1226f0125a1226f0125a
+
+# Create a line of "sub "
+1b3c3229
+
+%%Level1End

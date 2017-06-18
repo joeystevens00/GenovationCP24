@@ -1,0 +1,17 @@
+%%Level1
+%Name=Finish Subroutine
+
+# Creates brackets for subroutine and goes back to the start (always followed by key9)
+
+# Enter
+5a
+# Bracket 
+1254f012
+
+# Enter Enter
+5a5a
+
+# Up
+e075
+
+%%Level1End
