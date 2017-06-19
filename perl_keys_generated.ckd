@@ -20,13 +20,62 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Finish Subroutine
 Level_1_Codes=5a1254f0125a5ae075
+[KEY12]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Function Call that passes anonymous hash reference
+Level_1_Codes=12465a545af012
+[KEY13]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Parentheses 
+Level_1_Codes=1246f012
+[KEY14]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Finish Subroutine
+Level_1_Codes=5a1254f0125a5ae075
+[KEY16]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=If
+Level_1_Codes=432b291246f012
+[KEY17]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=elsIf
+Level_1_Codes=244b1b432b291246f012
+[KEY18]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=elsIf
+Level_1_Codes=244b1b245a12545af012
 [KEY20]
 L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
-Level_1_Name=Just a test
-Level_1_Codes=123af0121c212d441b291c2d24292c3324292144444b241b2c1216f012
+Level_1_Name=My Options eq args 
+Level_1_Codes=3a3529124625f012444d2c4344311245f012295529121e4ef0124c5a
+[KEY21]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Option ref key
+Level_1_Codes=1225f012444d2c4344314e124954f01252
 [KEY4]
 L1_AutoRepeat=0
 L2_AutoRepeat=0

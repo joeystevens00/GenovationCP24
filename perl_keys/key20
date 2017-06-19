@@ -1,6 +1,62 @@
 %%Level1
 
-%Name=Just a test
-123af0121c212d441b291c2d24292c3324292144444b241b2c1216f012
+%Name=My Options eq args 
+
+# my ($option) = @_; 
+
+# my 
+3a35
+
+# Space
+29
+
+# Shift Down
+12
+
+# (
+46
+
+# $
+25
+
+# Shift Up
+f012
+
+# Option
+444d2c434431
+
+# Shift Down
+12
+
+# )
+45
+
+# Shift Up
+f012
+
+# Space
+29
+
+# = 
+55
+
+# Space
+29
+
+# Shift Down
+12
+
+# @_
+1e4e
+
+# Shift Up
+f012
+
+# ;
+4c
+
+# Enter
+5a
 
 %%Level1End
+
