@@ -23,9 +23,8 @@ foreach my $file (@files)
 {
 	open my $info, $file or die "Could not open $file: $!";
 	my ($level1, $level2, $level1_code, $level2_code);
+	my ($level1autorepeat, $level2autorepeat) = 0;
 	push @generated_ckd, '[' . uc $file . "]";
-	push @generated_ckd, 'L1_AutoRepeat=0';
-	push @generated_ckd, 'L2_AutoRepeat=0';
 	push @generated_ckd, 'L1_MacroMode=0';
 	push @generated_ckd, 'L2_MacroMode=0';
 	while(my $line = <$info>)
@@ -37,6 +36,19 @@ foreach my $file (@files)
 			$level2='false';
 
 		}
+		
+		if (m/%%L1_AutoRepeat/)
+		{
+			$level1autorepeat = 1;
+			
+		}
+		
+		if (m/%%L2_AutoRepeat/)
+		{
+			$level2autorepeat = 1;
+			
+		}		
+		
 		if ( m/^%%Level2/ )
 		{
 			$level1='false';
@@ -45,6 +57,13 @@ foreach my $file (@files)
 		
 		if ( m/^%%Level1End/ )
 		{
+			# If autorepeat is on
+			if ($level1autorepeat == 1)
+			{
+				push @generated_ckd, 'L1_AutoRepeat=1';
+			}
+			
+			
 			$level1_code =~ s/\R//g;
 			chomp;
 			push @generated_ckd, 'Level_1_Codes=' . $level1_code; 
@@ -52,6 +71,12 @@ foreach my $file (@files)
 	
 		if ( m/^%%Level2End/ )
 		{
+			# If autorepeat is on
+			if ($level2autorepeat == 1)
+			{
+				push @generated_ckd, 'L2_AutoRepeat=1';
+			}
+			
 			$level2_code =~ s/\R//g;
 			chomp;
 			push @generated_ckd, 'Level_2_Codes=' . $level2_code; 
