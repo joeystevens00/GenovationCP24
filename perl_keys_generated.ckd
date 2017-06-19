@@ -20,6 +20,13 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Finish Subroutine
 Level_1_Codes=5a1254f0125a5ae075
+[KEY11]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Left Arrow
+Level_1_Codes=e06b
 [KEY12]
 L1_AutoRepeat=0
 L2_AutoRepeat=0
@@ -41,6 +48,13 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Finish Subroutine
 Level_1_Codes=5a1254f0125a5ae075
+[KEY15]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Right Arrow
+Level_1_Codes=e074
 [KEY16]
 L1_AutoRepeat=0
 L2_AutoRepeat=0
@@ -62,6 +76,13 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=elsIf
 Level_1_Codes=244b1b245a12545af012
+[KEY19]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Up Arrow
+Level_1_Codes=e075
 [KEY20]
 L1_AutoRepeat=0
 L2_AutoRepeat=0
@@ -76,6 +97,20 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Option ref key
 Level_1_Codes=1225f012444d2c4344314e124954f01252
+[KEY22]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Down Arrow
+Level_1_Codes=e072
+[KEY23]
+L1_AutoRepeat=0
+L2_AutoRepeat=0
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=F8
+Level_1_Codes=0a
 [KEY4]
 L1_AutoRepeat=0
 L2_AutoRepeat=0
