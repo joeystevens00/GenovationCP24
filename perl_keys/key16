@@ -1,7 +1,7 @@
 %%Level1
 
 %Name=If
-
+@Rawcodes
 # if([cursor])
 
 # if
@@ -18,6 +18,6 @@
 
 # Shift Up
 f012
-
+@RawcodesEnd
 %%Level1End
 

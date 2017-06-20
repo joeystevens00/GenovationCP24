@@ -1,6 +1,6 @@
 %%Level1
 %Name=Comment line to subroutine
-
+@Rawcodes
 # Creates a subroutine comment like so:
 ##  #####################################################
 
@@ -16,5 +16,5 @@
 
 # Bring shift up then go left until we're where the two spaces are
 f012e06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06be06b
-
+@RawcodesEnd
 %%Level1End

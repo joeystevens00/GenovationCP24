@@ -2,7 +2,7 @@
 
 %Name=Up Arrow
 %%L1_AutoRepeat
-
+@Rawcodes
 e075
-
+@RawcodesEnd
 %%Level1End

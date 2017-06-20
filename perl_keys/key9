@@ -1,6 +1,6 @@
 %%Level1
 %Name=Comment desc to subroutine
-
+@Rawcodes
 # Drops 4 comment lines followed by a subroutine declaration
 
 # Down (This is always follwed by Key8)

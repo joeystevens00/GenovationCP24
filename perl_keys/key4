@@ -1,5 +1,6 @@
 %%Level1
 %Name=Comment block
+@Rawcodes
 
 # Win/Meta Down
 e01f
@@ -30,5 +31,5 @@ e2017d
 
 # Up Up Up
 e075e075e075
-
+@RawcodesEnd
 %%Level1End

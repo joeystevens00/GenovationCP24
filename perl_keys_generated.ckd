@@ -11,6 +11,11 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Get current epoch time
 Level_1_Codes=e01f2de2017de0f01f4d242d4b294e24291252f0123c1b24291221f0124b434d32441c2d234c291221f0124b434d32441c2d234e1249f01221444d351246f0122c433a241245f0124c1252f0125a110de2017df011142af014
+[KEY1]
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Testing Ascii
+Level_1_Codes=33431b431b1c2c241b2c1d2d432c2c243143314d3c2d244b351c2c332d443c34331a452c332d443c343346
 [KEY10]
 L1_MacroMode=0
 L2_MacroMode=0
@@ -20,7 +25,6 @@ Level_1_Codes=5a1254f0125a5ae075
 L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Left Arrow
-L1_AutoRepeat=1
 Level_1_Codes=e06b
 [KEY12]
 L1_MacroMode=0
@@ -41,7 +45,6 @@ Level_1_Codes=5a1254f0125a5ae075
 L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Right Arrow
-L1_AutoRepeat=1
 Level_1_Codes=e074
 [KEY16]
 L1_MacroMode=0
@@ -62,7 +65,6 @@ Level_1_Codes=244b1b245a12545af012
 L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Up Arrow
-L1_AutoRepeat=1
 Level_1_Codes=e075
 [KEY20]
 L1_MacroMode=0
@@ -78,7 +80,6 @@ Level_1_Codes=1225f012444d2c4344314e124954f01252
 L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=Down Arrow
-L1_AutoRepeat=1
 Level_1_Codes=e072
 [KEY23]
 L1_MacroMode=0

@@ -2,7 +2,7 @@
 
 %Name=Right Arrow
 %%L1_AutoRepeat
-
+@Rawcodes
 e074
-
+@RawcodesEnd
 %%Level1End

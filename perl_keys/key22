@@ -2,6 +2,7 @@
 
 %Name=Down Arrow
 %%L1_AutoRepeat
+@Rawcodes
 e072
-
+@RawcodesEnd
 %%Level1End

@@ -1,6 +1,7 @@
 %%Level1
 
 %Name=Function Call that passes anonymous hash reference
+@Rawcodes
 
 # This is the goal: 
 # subRoutine[buttonPressHere](
@@ -29,6 +30,6 @@
 # Shift Up
 f012
 
-
+@RawcodesEnd
 %%Level1End
 

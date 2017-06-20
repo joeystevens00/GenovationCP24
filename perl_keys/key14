@@ -1,5 +1,6 @@
 %%Level1
 %Name=Finish Subroutine
+@Rawcodes
 
 # Creates brackets for subroutine and goes back to the start (always followed by key9)
 
@@ -13,5 +14,5 @@
 
 # Up
 e075
-
+@RawcodesEnd
 %%Level1End
