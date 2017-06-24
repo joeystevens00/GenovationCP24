@@ -71,11 +71,20 @@ sub alphanumeric_to_keycode
 {
     my ($option) = @_;
     my $return_str = "";
+    # For each char in the string
     foreach (split('', $option))
     {
+    	# If we have the char  defined in the translation map  
         if (defined $keycodes{$_}) 
         {
         	$return_str .= $keycodes{$_};
+        }
+
+        # If the char is an uppercase letter
+        if($_ =~ /[A-Z]/)
+        {
+        	# Convert the char to lowcase and wrap in shift down / shift up 
+        	$return_str .= '12' . $keycodes{lc $_} . 'f012'
         }
     }
     return $return_str;
