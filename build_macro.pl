@@ -2,93 +2,12 @@
 use strict;
 use warnings;
 use Data::Dumper;
+use File::Path;
+use File::Spec;
+use Cwd;
 
-################################################################################
-################################################################################
-##
-## Helpers
-##
-################################################################################
-################################################################################
-sub Level1OrLevel2
-{
-    my ($option) = @_;
-    foreach (keys %{$option})
-    {
-        return $_ if($option->{$_} eq 'true');
-    }
-}
+require 'keycode_conversion.pl';
 
-
-################################################################################
-################################################################################
-##
-## Keycode translation
-##
-################################################################################
-################################################################################
-
-our %keycodes = (
-    a => '1c',
-    b => '32',
-    c => '21',
-    d => '23',
-    e => '24',
-    f => '2b',
-    g => '34',
-    h => '33',
-    i => '43',
-    j => '3b',
-    k => '42',
-    l => '4b',
-    m => '3a',
-    n => '31',
-    o => '44',
-    p => '4d',
-    q => '15',
-    r => '2d',
-    s => '1b',
-    t => '2c',
-    u => '3c',
-    v => '2a',
-    w => '1d',
-    x => '22',
-    y => '35',
-    z => '1a',
-    0 => '45',
-    1 => '16',
-    2 => '1e',
-    3 => '26',
-    4 => '25',
-    5 => '2e',
-    6 => '36',
-    7 => '3d',
-    8 => '3e',
-    9 => '46'
-);
-
-sub alphanumeric_to_keycode
-{
-    my ($option) = @_;
-    my $return_str = "";
-    # For each char in the string
-    foreach (split('', $option))
-    {
-    	# If we have the char  defined in the translation map  
-        if (defined $keycodes{$_}) 
-        {
-        	$return_str .= $keycodes{$_};
-        }
-
-        # If the char is an uppercase letter
-        if($_ =~ /[A-Z]/)
-        {
-        	# Convert the char to lowcase and wrap in shift down / shift up 
-        	$return_str .= '12' . $keycodes{lc $_} . 'f012'
-        }
-    }
-    return $return_str;
-}
 
 ################################################################################
 ################################################################################
@@ -101,8 +20,8 @@ sub alphanumeric_to_keycode
 
 my $macro_set = $ARGV[0];
 $macro_set .= '_keys';
-
-chdir($macro_set) or die "$!";
+my $keys_directory = $macro_set . '/keys';
+chdir($keys_directory) or die "$!";
 my @files = <*>;
 my @generated_ckd;
 
@@ -262,10 +181,24 @@ foreach my $file (@files)
 #
 #
 chdir('..') or die "$!";
+chdir('..') or die "$!";
+
+# Detect if the generated directory exists. If not make it.
+my $generated_directory = $macro_set . '/out';
+my $outfile = $generated_directory .  '/' . $macro_set . "_generated.ckd";
+my $pwd = cwd();
+if (! -d $generated_directory)
+{
+	print  "\n" . $pwd . '/' . $generated_directory . "\n";
+	mkdir($pwd . '/' . $generated_directory) or die "$!";
+}
+
 # Write out the generated file
-open (my $ckd_fh, '>', $macro_set . "_generated.ckd");
+open (my $ckd_fh, '>',  $outfile);
 	foreach my $line (@generated_ckd)
 	{
 			print $ckd_fh $line . "\n";
 	}
 close $ckd_fh;
+
+print "Successfully generated file: $pwd/$outfile";
