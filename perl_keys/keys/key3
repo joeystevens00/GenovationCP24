@@ -1,0 +1,11 @@
+%%Level1
+%Name=Fire AHK F24
+@Rawcodes
+# Sends F24 followed by CTRL+V
+
+5f
+
+# ctrl v
+142af014
+
+%%Level1End
