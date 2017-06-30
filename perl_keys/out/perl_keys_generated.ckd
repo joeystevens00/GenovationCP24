@@ -86,6 +86,11 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Name=F8
 Level_1_Codes=0a
+[KEY3]
+L1_MacroMode=0
+L2_MacroMode=0
+Level_1_Name=Fire AHK F24
+Level_1_Codes=5f142af014
 [KEY4]
 L1_MacroMode=0
 L2_MacroMode=0
