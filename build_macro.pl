@@ -106,6 +106,19 @@ foreach my $file (@files)
 				$level2autorepeat = 1;		
 			}
 			
+			# If the key is a level shift
+			if (m/%%LShift/i)
+			{
+				push @generated_ckd, 'KeyType=1';
+				
+			}
+			
+			# if the key is a level toggle
+			if (m/%%LToggle/i)
+			{
+				push @generated_ckd, 'KeyType=0';
+				
+			}			
 			
 			# If autorepeat is on
 			if ($levelend =~ /Level1/i && $level1autorepeat == 1)
