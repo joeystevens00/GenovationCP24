@@ -26,20 +26,16 @@ my @files = <*>;
 my @generated_ckd;
 
 
-# Global params. Don't care to support customization for now
-push @generated_ckd, '[GLOBAL_PARAMETERS]',
-	'Model_Number=CP24', 'Number_Of_Keys=24',
-	'Key_Roll_Over=2', 'LED_Function=1',
-	'LED2_Function=2', 'LED3_Function=4',
-	'Character_Pacing=1';
-
-
-
-
 # Iterate through all of the keyfiles and generate the CKD code
 foreach my $file (@files) 
 {
 	open my $info, $file or die "Could not open $file: $!";
+
+	if ($file eq 'global')
+	{
+		push @generated_ckd, <$info>;
+		next;
+	}
 
 	push @generated_ckd, '[' . uc $file . "]";
 	push @generated_ckd, 'L1_MacroMode=0';
@@ -52,13 +48,11 @@ foreach my $file (@files)
 
 		$_=$line;
 		chomp;
-		
-		
+
 		if ($line =~ /^ *$/ or $line =~ /^$/ )
 		{
 			next
 		}
-		
 		
 		# If we're beginning the Level1 block for the key
 		# %%Level1
